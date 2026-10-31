@@ -1,0 +1,67 @@
+.melodica-keyboard,.melodica-staff{display:block;width:100%;height:100%;overflow:visible;user-select:none}
+.melodica-keyboard{touch-action:none}
+.instrument-shadow{fill:#102d31;opacity:.15;transform:translateY(10px)}
+.key-bed{fill:#102c31}
+.piano-key{outline:none;touch-action:none}
+.piano-key .key-surface{transition:fill 90ms,transform 90ms;stroke:#a8b7b5;stroke-width:1.6}
+.white-key .key-surface{fill:#fffefa}
+.white-key.is-selected .key-surface{fill:#f6d180}
+.white-key.is-down .key-surface{fill:#e9b34f;stroke:#a76c1d}
+.black-key .key-surface{fill:#18343d;stroke:#0c282e;stroke-width:2}
+.black-key.is-selected .key-surface{fill:#986d2d;stroke:#b88738}
+.black-key.is-down .key-surface{fill:#b17a26;stroke:#e2b34f}
+.piano-key:focus-visible .key-surface{stroke:#0c8290;stroke-width:6}
+.piano-key:hover .key-surface{filter:brightness(.97)}
+.key-front-edge{stroke:#dfe2d8;stroke-width:4;fill:none}
+.is-down .key-front-edge{stroke:#c2933b}
+.black-key-shine{fill:none;stroke:#668080;stroke-width:2;opacity:.45}
+.key-selection-mark{fill:none;stroke:#90601e;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.black-key .key-selection-mark{stroke:#fff0c4}
+.key-finger-dot{fill:#e4eeeb;stroke:#b6cfca;stroke-width:1.2}
+.key-finger-number{font:500 20px system-ui,sans-serif;fill:#246e75}
+.keyboard-note-labels rect{fill:#f6f5ed;fill-opacity:.96;stroke:#dbdfd5;stroke-width:1}
+.keyboard-note-labels text{font:600 29px system-ui,'Malgun Gothic',sans-serif;fill:#254d51}
+.position-bracket path{stroke:#aebeb4;fill:none;stroke-width:2.5;stroke-linecap:round}
+.position-bracket text{font:500 24px system-ui,'Malgun Gothic',sans-serif;fill:#658279}
+.black-key-group path{stroke:#97aba7;fill:none;stroke-width:2.4;stroke-linecap:round}
+.black-key-group text{font:500 24px system-ui,'Malgun Gothic',sans-serif;fill:#658079}
+.hand-rig{pointer-events:none}
+.hand-root{transition:transform 450ms cubic-bezier(.25,.65,.25,1);transform-origin:0 0;filter:drop-shadow(0 7px 7px #173b3a26)}
+.timeline-motion .hand-root{transition:none}
+.hand-joint{transition:transform 90ms ease-out;transform-origin:0 0}
+.hand-skin,.hand-finger-silhouette{fill:#f1ccab;stroke:none}
+.hand-finger-outline{fill:none;stroke:#bd9678;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.hand-highlight{fill:none;stroke:#fff4de;stroke-width:2;stroke-linecap:round;opacity:.38}
+.hand-nail{fill:#f9e2cf;stroke:#c9a58b;stroke-width:.8;opacity:.8}
+.hand-crease{stroke:#bd987a;fill:none;stroke-width:1;stroke-linecap:round;opacity:.48}
+.hand-palm,.hand-palm-top{fill:#f1ccab;stroke:#bc9476;stroke-width:2;stroke-linejoin:round}
+.hand-palm-top{stroke:none}
+.palm-crease{stroke:#d1aa89;fill:none;stroke-width:2;stroke-linecap:round;opacity:.75}
+.finger-active .hand-skin,.finger-active .hand-finger-silhouette{fill:#efc19a;stroke:none}
+.finger-active .hand-finger-outline{stroke:#b58b66}
+.hand-number circle{fill:#fff9eb;stroke:#218392;stroke-width:2.3}
+.hand-number text{font:600 27px system-ui,sans-serif;fill:#137c90}
+.hand-number path{stroke:#218392;stroke-width:2}
+.hand-number.active circle{fill:#147d8b;stroke:#147d8b}
+.hand-number.active text{fill:#fff}
+.finger-contact ellipse{fill:#d8962a;opacity:.3}
+.finger-contact circle{fill:#167e8c;stroke:#fffaf0;stroke-width:1.5}
+.reduced-motion .hand-root,.reduced-motion .hand-joint,.reduced-motion .key-surface{transition:none}
+.staff-lines line{stroke:#9caeab;stroke-width:1.8}
+.treble-clef{font:132px 'Noto Music','Segoe UI Symbol','Apple Symbols',serif;fill:#244d50}
+.time-signature text{font:600 40px Georgia,serif;fill:#365b5d}
+.staff-empty{font:400 24px system-ui,'Malgun Gothic',sans-serif;fill:#8a9e98}
+.staff-note{fill:#2c5053;color:#2c5053}
+.staff-note.note-active{fill:#167e88;color:#167e88}
+.note-head{fill:currentColor;stroke:currentColor;stroke-width:2.3}
+.note-head.open-note{fill:#fbfaf4;stroke-width:4}
+.note-stem,.ledger-line{stroke:currentColor;stroke-width:3;stroke-linecap:round}
+.ledger-line{stroke-width:2.5}
+.note-highlight{fill:#e1efea;stroke:none}
+.note-flag{fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round}
+.note-tie{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round}
+.sharp-symbol{font:42px 'Segoe UI Symbol',serif;fill:currentColor}
+.quarter-rest{font:91px 'Noto Music','Segoe UI Symbol','Apple Symbols',serif;fill:currentColor}
+.staff-note-name{font:500 28px system-ui,'Malgun Gothic',sans-serif;fill:currentColor}
+.barline{stroke:#829b96;stroke-width:2.4}
+@media(prefers-reduced-motion:reduce){.hand-root,.hand-joint,.piano-key .key-surface{transition:none}}
