@@ -1,5 +1,6 @@
 .melodica-keyboard,.melodica-staff{display:block;width:100%;height:100%;overflow:visible;user-select:none}
 .melodica-keyboard{touch-action:none}
+.melodica-keyboard.key-detail-view{overflow:hidden}
 .instrument-shadow{fill:#102d31;opacity:.15;transform:translateY(10px)}
 .key-bed{fill:#102c31}
 .piano-key{outline:none;touch-action:none}
@@ -12,14 +13,20 @@
 .black-key.is-down .key-surface{fill:#b17a26;stroke:#e2b34f}
 .piano-key:focus-visible .key-surface{stroke:#0c8290;stroke-width:6}
 .piano-key:hover .key-surface{filter:brightness(.97)}
-.key-front-edge{stroke:#dfe2d8;stroke-width:4;fill:none}
+.key-travel{transition:transform 85ms cubic-bezier(.2,.6,.3,1)}
+.white-key-front{fill:#cdd4c8;fill-opacity:.62;stroke:none}
+.is-selected .white-key-front{fill:#c4984f;fill-opacity:.38}
+.is-down .white-key-front{fill:#b48130;fill-opacity:.55}
+.black-key-front{fill:#071e27;stroke:none;opacity:.78}
+.black-key.is-selected .black-key-front,.black-key.is-down .black-key-front{fill:#63451f}
+.key-front-edge{stroke:#fffef2;stroke-width:2;fill:none;opacity:.78}
 .is-down .key-front-edge{stroke:#c2933b}
-.black-key-shine{fill:none;stroke:#668080;stroke-width:2;opacity:.45}
+.black-key-shine{fill:none;stroke:#a8bab1;stroke-width:1.4;opacity:.38;stroke-linejoin:round}
 .key-selection-mark{fill:none;stroke:#90601e;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
 .black-key .key-selection-mark{stroke:#fff0c4}
 .key-finger-dot{fill:#e4eeeb;stroke:#b6cfca;stroke-width:1.2}
 .key-finger-number{font:500 20px system-ui,sans-serif;fill:#246e75}
-.keyboard-note-labels rect{fill:#f6f5ed;fill-opacity:.96;stroke:#dbdfd5;stroke-width:1}
+.keyboard-note-labels rect{fill:#f6f5ed;fill-opacity:.84;stroke:#d6ded1;stroke-width:.8}
 .keyboard-note-labels text{font:600 29px system-ui,'Malgun Gothic',sans-serif;fill:#254d51}
 .position-bracket path{stroke:#aebeb4;fill:none;stroke-width:2.5;stroke-linecap:round}
 .position-bracket text{font:500 24px system-ui,'Malgun Gothic',sans-serif;fill:#658279}
@@ -46,7 +53,7 @@
 .hand-number.active text{fill:#fff}
 .finger-contact ellipse{fill:#d8962a;opacity:.3}
 .finger-contact circle{fill:#167e8c;stroke:#fffaf0;stroke-width:1.5}
-.reduced-motion .hand-root,.reduced-motion .hand-joint,.reduced-motion .key-surface{transition:none}
+.reduced-motion .hand-root,.reduced-motion .hand-joint,.reduced-motion .key-surface,.reduced-motion .key-travel{transition:none}
 .staff-lines line{stroke:#9caeab;stroke-width:1.8}
 .treble-clef{font:132px 'Noto Music','Segoe UI Symbol','Apple Symbols',serif;fill:#244d50}
 .time-signature text{font:600 40px Georgia,serif;fill:#365b5d}
@@ -64,4 +71,4 @@
 .quarter-rest{font:91px 'Noto Music','Segoe UI Symbol','Apple Symbols',serif;fill:currentColor}
 .staff-note-name{font:500 28px system-ui,'Malgun Gothic',sans-serif;fill:currentColor}
 .barline{stroke:#829b96;stroke-width:2.4}
-@media(prefers-reduced-motion:reduce){.hand-root,.hand-joint,.piano-key .key-surface{transition:none}}
+@media(prefers-reduced-motion:reduce){.hand-root,.hand-joint,.piano-key .key-surface,.key-travel{transition:none}}

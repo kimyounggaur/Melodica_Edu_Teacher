@@ -1,0 +1,24 @@
+.melodica-v2-shell{pointer-events:none}
+.melodica-v2-ground-shadow{fill:#12383d;opacity:.14;transform:translateY(5px)}
+.melodica-v2-body-edge{stroke:#163a40;stroke-width:1.5;stroke-linejoin:round}
+.melodica-v2-body-paint{stroke:#376d6a;stroke-width:1;stroke-linejoin:round}
+.melodica-v2-top-reflection{fill:none;stroke:#c9dec7;stroke-width:2.2;stroke-linecap:round;opacity:.62}
+.melodica-v2-case-seam{fill:none;stroke:#0b3a40;stroke-width:1.5;stroke-linecap:round;opacity:.65}
+.melodica-v2-front-highlight{fill:none;stroke:#7da49a;stroke-width:2;stroke-linecap:round;opacity:.45}
+.melodica-v2-keywell{stroke:#173d40;stroke-width:1.5}
+.melodica-v2-well-seam{fill:none;stroke:#061f27;stroke-width:3;opacity:.8}
+.melodica-v2-rail-line{fill:none;stroke:#a8c5b0;stroke-width:1.3;stroke-linecap:round;opacity:.53}
+.melodica-v2-rail-shadow{fill:none;stroke:#082e36;stroke-width:1;stroke-linecap:round;opacity:.5}
+.melodica-v2-air-slot{fill:#123e43;stroke:#80a89a;stroke-width:.65}
+.melodica-v2-wordmark{font:600 12px system-ui,sans-serif;letter-spacing:4.5px;fill:#e7e8cf;paint-order:stroke;stroke:#1b585b;stroke-width:.4}
+.melodica-v2-brand-line{fill:none;stroke:#cfddbc;stroke-width:.8;opacity:.5}
+.melodica-v2-inlet>path:first-child{stroke:#617f75;stroke-width:1.4}
+.melodica-v2-inlet-seam{fill:none;stroke:#798d7f;stroke-width:1;opacity:.65}
+.melodica-v2-port-ring{fill:#71978b;stroke:#a0b8a4;stroke-width:1}
+.melodica-v2-port-core{fill:#153d42;stroke:#0b2d34;stroke-width:1}
+.melodica-v2-socket-highlight{fill:none;stroke:#fff8dd;stroke-width:1.5;stroke-linecap:round;opacity:.75}
+.melodica-v2-release-ring{fill:#103a42;stroke:#719a8f;stroke-width:.9}
+.melodica-v2-release-mark{fill:none;stroke:#5a7c73;stroke-width:1;stroke-linecap:round}
+.melodica-v2-fastener>circle:first-child{stroke:#123b40;stroke-width:.9}
+.melodica-v2-fastener>circle:nth-child(2){fill:none;stroke:#6f9085;stroke-width:.45}
+.melodica-v2-fastener path{stroke:#355e59;stroke-width:1.1;stroke-linecap:round}

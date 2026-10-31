@@ -1,0 +1,36 @@
+.right-hand-rig-v2{pointer-events:none}
+.rh2-hand-root{transform-origin:0 0;transition:transform 450ms cubic-bezier(.25,.65,.25,1);filter:drop-shadow(0 8px 9px #173b3a2b)}
+.right-hand-rig-v2.timeline-motion .rh2-hand-root{transition:none}
+.right-hand-rig-v2.phase-lift:not(.timeline-motion) .rh2-hand-root{transition-duration:150ms}
+.right-hand-rig-v2.phase-settle:not(.timeline-motion) .rh2-hand-root{transition-duration:190ms}
+.rh2-contact-shadow{fill:#143b3a;opacity:.11;filter:blur(4px)}
+.rh2-finger-silhouette{stroke:#a97e62;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.rh2-segment-glaze{fill:#fff7e8;opacity:.075}
+.rh2-joint{transform-origin:0 0;transition:none;will-change:transform}
+.rh2-joint-crease{fill:none;stroke:#b58668;stroke-width:1.15;stroke-linecap:round;opacity:.52}
+.rh2-press-warmth{fill:#cf8352;opacity:.11;stroke:none}
+.rh2-nail{fill:#f8ddd0;stroke:#b88e7b;stroke-width:1.05}
+.rh2-nail-shine{fill:none;stroke:#fff8ee;stroke-width:1.65;stroke-linecap:round;opacity:.72}
+.rh2-palm{stroke:none}
+.rh2-palm-outline{fill:none;stroke:#a97d60;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.rh2-palm-light{fill:#fff1de;opacity:.17;stroke:none}
+.rh2-thenar,.rh2-webbing,.rh2-knuckle-line,.rh2-hand-vein,.rh2-wrist-crease{fill:none;stroke:#b68162;stroke-linecap:round;stroke-linejoin:round}
+.rh2-thenar{stroke-width:1.65;opacity:.52}
+.rh2-webbing{stroke-width:1.25;opacity:.38}
+.rh2-knuckle-line{stroke-width:1.15;opacity:.42}
+.rh2-hand-vein{stroke:#ca9676;stroke-width:1.2;opacity:.34}
+.rh2-wrist-crease{stroke-width:1.35;opacity:.45}
+.rh2-finger-number circle{fill:#fffaf0;stroke:#167f8e;stroke-width:2.2;filter:drop-shadow(0 2px 2px #173b3a1f)}
+.rh2-finger-number text{font:650 26px system-ui,sans-serif;fill:#11798a}
+.rh2-finger-number path{fill:none;stroke:#167f8e;stroke-width:2;stroke-linecap:round}
+.rh2-finger-number.is-active circle{fill:#147d8b;stroke:#147d8b}
+.rh2-finger-number.is-active text{fill:#fff}
+.rh2-finger-contact ellipse{fill:#d79025;opacity:.28}
+.rh2-finger-contact circle{fill:#167f8c;stroke:#fffaf0;stroke-width:1.5}
+.right-hand-rig-v2.phase-lift .rh2-contact-shadow,.right-hand-rig-v2.phase-translate .rh2-contact-shadow{opacity:.045;transform:scale(.94);transform-origin:424px 748px}
+.right-hand-rig-v2.phase-release .rh2-contact-shadow{opacity:.075}
+.right-hand-rig-v2.phase-settle .rh2-contact-shadow{animation:rh2-settle-shadow 180ms ease-out}
+.right-hand-rig-v2.reduced-motion .rh2-hand-root,.right-hand-rig-v2.reduced-motion .rh2-joint{transition:none}
+.right-hand-rig-v2.reduced-motion .rh2-contact-shadow{animation:none}
+@keyframes rh2-settle-shadow{0%{opacity:.045;transform:scale(.94);transform-origin:424px 748px}100%{opacity:.11;transform:scale(1);transform-origin:424px 748px}}
+@media(prefers-reduced-motion:reduce){.rh2-hand-root,.rh2-joint{transition:none}.right-hand-rig-v2.phase-settle .rh2-contact-shadow{animation:none}}

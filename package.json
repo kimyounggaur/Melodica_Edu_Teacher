@@ -1,12 +1,12 @@
 {
   "name": "melodica-class",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build && node scripts/make-offline.mjs",
-    "test": "node --experimental-strip-types --test src/domain.test.ts && node --test scripts/offline.test.mjs",
+    "test": "node --experimental-strip-types --test src/domain.test.ts && node --test scripts/offline.test.mjs && node --test scripts/hand-geometry.test.mjs",
     "typecheck": "tsc -b"
   },
   "dependencies": {
